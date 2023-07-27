@@ -135,7 +135,7 @@ h1 {
     border-radius: 10px;
     background-color: rgba(166, 166, 166, 0.2);
     backdrop-filter: blur(40px);
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -180,7 +180,7 @@ h1 {
     z-index: 10;
     /* animation: fade-up 1s ease; */
     transition: ease 1s;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .close {
