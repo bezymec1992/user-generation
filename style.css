@@ -1,6 +1,5 @@
 body {
     background-color: aquamarine;
-    padding: 0 20px;
 }
 
 a {
@@ -83,6 +82,7 @@ h1 {
 .users {
     max-width: 550px;
     width: 100%;
+    padding: 0 20px;
 }
 
 .user__name {
@@ -136,18 +136,24 @@ h1 {
     background-color: rgba(166, 166, 166, 0.2);
     backdrop-filter: blur(40px);
     position: fixed;
-    bottom: 50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     animation: fade-up 1s ease;
     z-index: 100;
+}
+@media screen and (max-width: 676px) {
+    .form-wrapper {
+        top: 100px;
+        transform: translate(-50%);
+    }
 }
 
 @keyframes fade-up {
     0% {
         opacity: 0;
-        bottom: 40%;
+        top: 40%;
     }
 
     100% {
@@ -172,7 +178,7 @@ h1 {
     background-color: rgba(232, 232, 232, 0.1);
     backdrop-filter: blur(10px);
     z-index: 10;
-    animation: fade-up 1s ease;
+    /* animation: fade-up 1s ease; */
     transition: ease 1s;
     overflow-y: hidden;
 }
