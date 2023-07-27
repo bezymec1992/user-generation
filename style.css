@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: #7395AE;
 }
 
 a {
@@ -20,8 +20,8 @@ h1 {
     align-items: center;
     max-width: 150px;
     width: 100%;
-    background-color: rgb(56, 53, 53);
-    color: white;
+    background-color: #B1A296;
+    color: black;
     padding: 0;
     margin-top: 15px;
     transition: ease 0.5s;
@@ -55,7 +55,7 @@ h1 {
 }
 
 .user-wrapp {
-    background-color: rgb(147, 186, 186);
+    background-color: #B1A296;
     margin-bottom: 20px;
     padding: 10px 0;
     transition: ease 0.5s;
@@ -70,12 +70,12 @@ h1 {
 
     50% {
         opacity: 1;
-        background-color: rgb(86, 165, 165);
+        background-color: #948376;
     }
 
     100% {
 
-        background-color: rgb(147, 186, 186);
+        background-color: #B1A296
     }
 }
 
@@ -107,9 +107,9 @@ h1 {
 }
 
 .btn__info {
-    border: 1px solid green;
-    background-color: rgb(56, 53, 53);
-    color: green;
+    border: 1px solid #5D5C61;
+    background-color: #5D5C61;
+    color: white;
     padding: 5px 20px;
     margin-top: 15px;
     transition: ease 0.5s;
@@ -173,7 +173,7 @@ h1 {
     height: 100vh;
     /* background-color: rgba(232, 232, 232, 0.1);
     backdrop-filter: blur(10px); */
-    background-color: aquamarine;
+    background-color: #7395AE;
     z-index: 10;
     /* animation: fade-up 1s ease; */
     transition: ease 1s;
@@ -247,7 +247,7 @@ select {
     position: fixed;
     text-align: center;
     font-size: 50px;
-    color: green;
+    color: white;
     top: 80px;
     font-weight: bold;
     text-shadow: #FC0 1px 0 10px;

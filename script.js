@@ -113,6 +113,7 @@ $(document).ready(function () {
             </li>`)
 
         clear();
+        formSection.classList.remove('form-open')
     })
 })
 
