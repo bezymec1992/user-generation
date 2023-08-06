@@ -1,16 +1,13 @@
 const inputs = document.querySelectorAll('.input');
 const imgPreview = document.getElementById('img-preview');
-const formSection = document.getElementById('form-section');
-const loader = document.querySelector('.load');
 let imgSrc = 'person.jpg';
-
 
 //loading start/end
 function loading() {
-    loader.classList.toggle("loading");
-    loader.classList.contains("loading") ?
-        loader.classList.remove("loader__title") :
-        loader.classList.add("loader__title");
+    $('.load').toggleClass("loading");
+    $('.load').hasClass("loading") ?
+        $('.load').removeClass("loader__title") :
+        $('.load').addClass("loader__title");
 }
 
 //call rendom user
@@ -113,12 +110,14 @@ $(document).ready(function () {
             </li>`)
 
         clear();
-        formSection.classList.remove('form-open')
+        $('.form-section').removeClass('form-open'); 
+        $('.users').toggleClass('user-close');
     })
 })
 
 //open and close form
 $(document).on("click", '.createUser, .close', function () {
-    formSection.classList.toggle('form-open')
+    $('.form-section').toggleClass('form-open'); 
+    $('.users').toggleClass('user-close');
     clear();
 });
